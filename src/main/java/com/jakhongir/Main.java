@@ -16,6 +16,10 @@ public class Main {
 
         var mailService = new MailService();
         mailService.sendEmail();
+
+        TextBox textBox = new TextBox();
+        textBox.enable();
+        textBox.disable();
     }
 
     public static TaxCalculator getCalculator() {
