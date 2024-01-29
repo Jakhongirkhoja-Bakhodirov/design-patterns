@@ -7,6 +7,12 @@ public class Main {
         user.sayHello();
         TaxCalculator calculator2022 = getCalculator();
         System.out.println(calculator2022.calculateTax());
+
+        Account account = new Account();
+        account.deposit(1000);
+        System.out.println(account.getBalance());
+        account.withdraw(100);
+        System.out.println(account.getBalance());
     }
 
     public static TaxCalculator getCalculator() {
