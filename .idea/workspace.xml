@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="using different way setter in encapsulation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/MailService.java" afterDir="false" />
+    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="basic concepts of abstraction">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706499939310</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="basic concepts of abstraction">
+      <option name="closed" value="true" />
+      <created>1706500467525</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1706500467525</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +124,7 @@
     <MESSAGE value="basic concepts about Java Interfaces" />
     <MESSAGE value="encapsulation setter and getter" />
     <MESSAGE value="using different way setter in encapsulation" />
-    <option name="LAST_COMMIT_MESSAGE" value="using different way setter in encapsulation" />
+    <MESSAGE value="basic concepts of abstraction" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic concepts of abstraction" />
   </component>
 </project>
