@@ -1,5 +1,7 @@
 package com.jakhongir;
 
+import org.w3c.dom.Text;
+
 public class Main {
     public static void main(String[] args) {
         User user = new User("Jakhongir");
@@ -20,9 +22,16 @@ public class Main {
         TextBox textBox = new TextBox();
         textBox.enable();
         textBox.disable();
+
+        drawUIControl(new CheckBox());
+        drawUIControl(new TextBox());
     }
 
     public static TaxCalculator getCalculator() {
         return new TaxCalculator2022();
+    }
+
+    public static void drawUIControl(UIControl control) {
+        control.draw();
     }
 }

@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="basic concepts of abstraction">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" afterDir="false" />
+    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/CheckBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="oop/inheritance" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
@@ -118,6 +125,17 @@
     <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="basic concepts about Java Classes" />
@@ -126,5 +144,15 @@
     <MESSAGE value="using different way setter in encapsulation" />
     <MESSAGE value="basic concepts of abstraction" />
     <option name="LAST_COMMIT_MESSAGE" value="basic concepts of abstraction" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
