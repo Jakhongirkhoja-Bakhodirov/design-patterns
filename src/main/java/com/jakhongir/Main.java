@@ -10,6 +10,9 @@ import com.jakhongir.oop.inheritance.UIControl;
 import com.jakhongir.oop.interfaces.TaxCalculator;
 import com.jakhongir.oop.interfaces.TaxCalculator2022;
 import com.jakhongir.patterns.bahavioral.momento.History;
+import com.jakhongir.patterns.bahavioral.state.Brush;
+import com.jakhongir.patterns.bahavioral.state.Canvas;
+import com.jakhongir.patterns.bahavioral.state.Selection;
 
 public class Main {
     public static void main(String[] args) {
@@ -55,6 +58,9 @@ public class Main {
         drawUIControl(new CheckBox());
         drawUIControl(new TextBox());
 
+        /*
+         * Example of Momento behavioral pattern
+         */
         var editor = new Editor();
         var history = new History();
 
@@ -67,8 +73,25 @@ public class Main {
         editor.setContent("c");
         editor.restore(history.pop());
 
-        System.out.println(editor.getContent());
+        System.out.println("\nExample of Momento Pattern:\n");
+        System.out.println("Previous editor state is "+ editor.getContent());
 
+        /*
+         * Example of State behavioral pattern
+         */
+        var canvas = new Canvas();
+        var selectionTool = new Selection();
+        var brushTool = new Brush();
+
+        System.out.println("\n Example of State Pattern:\n");
+
+        canvas.setCurrentTool(selectionTool);
+        canvas.mouseUp();
+        canvas.mouseDown();
+
+        canvas.setCurrentTool(brushTool);
+        canvas.mouseUp();
+        canvas.mouseDown();
     }
 
     public static TaxCalculator getCalculator() {
