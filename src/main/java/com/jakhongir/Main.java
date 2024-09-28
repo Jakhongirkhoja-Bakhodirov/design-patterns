@@ -1,6 +1,14 @@
 package com.jakhongir;
 
-import org.w3c.dom.Text;
+import com.jakhongir.oop.incapsulation.Account;
+import com.jakhongir.oop.abstraction.MailService;
+import com.jakhongir.oop.User;
+import com.jakhongir.oop.inheritance.CheckBox;
+import com.jakhongir.patterns.bahavioral.Editor;
+import com.jakhongir.oop.inheritance.TextBox;
+import com.jakhongir.oop.inheritance.UIControl;
+import com.jakhongir.oop.interfaces.TaxCalculator;
+import com.jakhongir.oop.interfaces.TaxCalculator2022;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,6 +33,12 @@ public class Main {
 
         drawUIControl(new CheckBox());
         drawUIControl(new TextBox());
+
+        var editor = new Editor();
+        editor.setContent("a");
+        editor.setContent("b");
+        editor.setContent("c");
+        editor.undo();
     }
 
     public static TaxCalculator getCalculator() {

@@ -1,4 +1,4 @@
-package com.jakhongir;
+package com.jakhongir.oop.abstraction;
 
 public class MailService {
     public void sendEmail() {

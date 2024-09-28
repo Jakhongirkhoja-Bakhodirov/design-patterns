@@ -1,4 +1,4 @@
-package com.jakhongir;
+package com.jakhongir.oop;
 
 public class User {
     //Fields (attributes)

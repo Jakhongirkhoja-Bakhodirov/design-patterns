@@ -1,4 +1,4 @@
-package com.jakhongir;
+package com.jakhongir.oop.incapsulation;
 
 public class Account {
     private float balance;

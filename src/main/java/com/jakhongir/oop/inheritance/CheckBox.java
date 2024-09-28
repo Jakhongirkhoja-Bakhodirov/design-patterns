@@ -1,4 +1,6 @@
-package com.jakhongir;
+package com.jakhongir.oop.inheritance;
+
+import com.jakhongir.oop.inheritance.UIControl;
 
 public class CheckBox extends UIControl {
 

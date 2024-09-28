@@ -1,4 +1,4 @@
-package com.jakhongir;
+package com.jakhongir.oop.inheritance;
 
 public abstract class UIControl {
     public void enable() {
