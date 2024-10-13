@@ -20,6 +20,9 @@ import com.jakhongir.patterns.bahavioral.strategy.compressor.JpegCompressor;
 import com.jakhongir.patterns.bahavioral.strategy.compressor.PngCompressor;
 import com.jakhongir.patterns.bahavioral.strategy.filter.BlackAndWhite;
 import com.jakhongir.patterns.bahavioral.strategy.filter.HighContrast;
+import com.jakhongir.patterns.bahavioral.template.AuditTrail;
+import com.jakhongir.patterns.bahavioral.template.GenerateReportTask;
+import com.jakhongir.patterns.bahavioral.template.TransferMoneyTask;
 
 public class Main {
     public static void main(String[] args) {
@@ -122,6 +125,15 @@ public class Main {
         var imageStorage = new ImageStorage();
         imageStorage.store("image.png", new PngCompressor(), new HighContrast());
         imageStorage.store("image.jpg", new JpegCompressor(), new BlackAndWhite());
+
+        /*
+         * Example of Template pattern
+         */
+        System.out.println("\n Example of Template Pattern:\n");
+        var transferMoneyTask = new TransferMoneyTask(new AuditTrail());
+        transferMoneyTask.execute();
+        var generateReportTask = new GenerateReportTask(new AuditTrail());
+        generateReportTask.execute();
     }
 
     public static TaxCalculator getCalculator() {
