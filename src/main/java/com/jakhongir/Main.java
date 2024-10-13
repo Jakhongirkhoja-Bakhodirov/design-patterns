@@ -22,6 +22,7 @@ import com.jakhongir.patterns.bahavioral.strategy.filter.BlackAndWhite;
 import com.jakhongir.patterns.bahavioral.strategy.filter.HighContrast;
 import com.jakhongir.patterns.bahavioral.template.AuditTrail;
 import com.jakhongir.patterns.bahavioral.template.GenerateReportTask;
+import com.jakhongir.patterns.bahavioral.template.TransactionExecutor;
 import com.jakhongir.patterns.bahavioral.template.TransferMoneyTask;
 
 public class Main {
@@ -130,10 +131,9 @@ public class Main {
          * Example of Template pattern
          */
         System.out.println("\n Example of Template Pattern:\n");
-        var transferMoneyTask = new TransferMoneyTask(new AuditTrail());
-        transferMoneyTask.execute();
-        var generateReportTask = new GenerateReportTask(new AuditTrail());
-        generateReportTask.execute();
+        var transactionExecutor = new TransactionExecutor(new AuditTrail());
+        transactionExecutor.execute(new TransferMoneyTask());
+        transactionExecutor.execute(new GenerateReportTask());
     }
 
     public static TaxCalculator getCalculator() {
