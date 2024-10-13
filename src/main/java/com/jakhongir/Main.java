@@ -15,6 +15,11 @@ import com.jakhongir.patterns.bahavioral.momento.History;
 import com.jakhongir.patterns.bahavioral.state.Brush;
 import com.jakhongir.patterns.bahavioral.state.Canvas;
 import com.jakhongir.patterns.bahavioral.state.Selection;
+import com.jakhongir.patterns.bahavioral.strategy.ImageStorage;
+import com.jakhongir.patterns.bahavioral.strategy.compressor.JpegCompressor;
+import com.jakhongir.patterns.bahavioral.strategy.compressor.PngCompressor;
+import com.jakhongir.patterns.bahavioral.strategy.filter.BlackAndWhite;
+import com.jakhongir.patterns.bahavioral.strategy.filter.HighContrast;
 
 public class Main {
     public static void main(String[] args) {
@@ -109,6 +114,14 @@ public class Main {
             System.out.println(iterator.current());
             iterator.next();
         }
+
+        /*
+         * Example of Strategy pattern
+         */
+        System.out.println("\n Example of Strategy Pattern:\n");
+        var imageStorage = new ImageStorage();
+        imageStorage.store("image.png", new PngCompressor(), new HighContrast());
+        imageStorage.store("image.jpg", new JpegCompressor(), new BlackAndWhite());
     }
 
     public static TaxCalculator getCalculator() {
