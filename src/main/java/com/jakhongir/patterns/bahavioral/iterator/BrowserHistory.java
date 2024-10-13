@@ -22,7 +22,7 @@ public class BrowserHistory {
     }
 
     public Iterator createIterator() {
-        return new ArrayIterator(this);
+        return new ListIterator(this);
     }
 
 }
