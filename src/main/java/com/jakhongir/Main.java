@@ -4,6 +4,8 @@ import com.jakhongir.oop.incapsulation.Account;
 import com.jakhongir.oop.abstraction.MailService;
 import com.jakhongir.oop.User;
 import com.jakhongir.oop.inheritance.CheckBox;
+import com.jakhongir.patterns.bahavioral.iterator.BrowserHistory;
+import com.jakhongir.patterns.bahavioral.iterator.Iterator;
 import com.jakhongir.patterns.bahavioral.momento.Editor;
 import com.jakhongir.oop.inheritance.TextBox;
 import com.jakhongir.oop.inheritance.UIControl;
@@ -74,7 +76,7 @@ public class Main {
         editor.restore(history.pop());
 
         System.out.println("\nExample of Momento Pattern:\n");
-        System.out.println("Previous editor state is "+ editor.getContent());
+        System.out.println("Previous editor state is " + editor.getContent());
 
         /*
          * Example of State behavioral pattern
@@ -92,6 +94,21 @@ public class Main {
         canvas.setCurrentTool(brushTool);
         canvas.mouseUp();
         canvas.mouseDown();
+
+        /*
+         * Example of Iterator behavioral pattern
+         */
+        var browserHistory = new BrowserHistory();
+        browserHistory.push("a");
+        browserHistory.push("b");
+        browserHistory.push("c");
+        System.out.println("\n Example of Iterator Pattern:\n");
+
+        Iterator iterator = browserHistory.createIterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.current());
+            iterator.next();
+        }
     }
 
     public static TaxCalculator getCalculator() {

@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/CheckBox.java" afterDir="false" />
+    <list default="true" id="97caa046-5828-40c1-9b65-81c482d1d9fa" name="Changes" comment="implementing State design pattern">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/patterns/bahavioral/iterator/ArrayIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/patterns/bahavioral/iterator/BrowserHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/patterns/bahavioral/iterator/Iterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/patterns/bahavioral/iterator/ListIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jakhongir/UIControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jakhongir/patterns/bahavioral/state/ToolType.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -50,18 +53,20 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;/Users/jakhongir/Courses/backend/java/codeWithMosh/DesignPatterns/src/main/java/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
 }</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="jdk-21.0.1-openjdk-21.0.1-e1d2075fd9a7-44b2a9b4" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-9b16c6e2" />
       </set>
     </attachedChunks>
   </component>
@@ -122,7 +127,39 @@
       <option name="project" value="LOCAL" />
       <updated>1706500467525</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="basic polymorphism of abstraction">
+      <option name="closed" value="true" />
+      <created>1706632448640</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706632448640</updated>
+    </task>
+    <task id="LOCAL-00008" summary="refactoring project structure according to lectures themes">
+      <option name="closed" value="true" />
+      <created>1727495749441</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727495749441</updated>
+    </task>
+    <task id="LOCAL-00009" summary="implementing Momento design pattern">
+      <option name="closed" value="true" />
+      <created>1727502360512</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727502360512</updated>
+    </task>
+    <task id="LOCAL-00010" summary="implementing State design pattern">
+      <option name="closed" value="true" />
+      <created>1727526103440</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727526103440</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -143,7 +180,11 @@
     <MESSAGE value="encapsulation setter and getter" />
     <MESSAGE value="using different way setter in encapsulation" />
     <MESSAGE value="basic concepts of abstraction" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic concepts of abstraction" />
+    <MESSAGE value="basic polymorphism of abstraction" />
+    <MESSAGE value="refactoring project structure according to lectures themes" />
+    <MESSAGE value="implementing Momento design pattern" />
+    <MESSAGE value="implementing State design pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementing State design pattern" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
