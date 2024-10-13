@@ -4,6 +4,9 @@ import com.jakhongir.oop.incapsulation.Account;
 import com.jakhongir.oop.abstraction.MailService;
 import com.jakhongir.oop.User;
 import com.jakhongir.oop.inheritance.CheckBox;
+import com.jakhongir.patterns.bahavioral.command.AddCustomerCommand;
+import com.jakhongir.patterns.bahavioral.command.CustomerService;
+import com.jakhongir.patterns.bahavioral.command.framework.Button;
 import com.jakhongir.patterns.bahavioral.iterator.BrowserHistory;
 import com.jakhongir.patterns.bahavioral.iterator.Iterator;
 import com.jakhongir.patterns.bahavioral.momento.Editor;
@@ -134,6 +137,15 @@ public class Main {
         var transactionExecutor = new TransactionExecutor(new AuditTrail());
         transactionExecutor.execute(new TransferMoneyTask());
         transactionExecutor.execute(new GenerateReportTask());
+
+        /*
+         * Example of Template pattern
+         */
+        System.out.println("\n Example of Template Pattern:\n");
+        var service = new CustomerService();
+        var command = new AddCustomerCommand(service);
+        var button = new Button(command);
+        button.click();
     }
 
     public static TaxCalculator getCalculator() {
