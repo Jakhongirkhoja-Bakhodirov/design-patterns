@@ -6,6 +6,9 @@ import com.jakhongir.oop.User;
 import com.jakhongir.oop.inheritance.CheckBox;
 import com.jakhongir.patterns.bahavioral.command.AddCustomerCommand;
 import com.jakhongir.patterns.bahavioral.command.CustomerService;
+import com.jakhongir.patterns.bahavioral.command.composite.BlackAndWhiteCommand;
+import com.jakhongir.patterns.bahavioral.command.composite.CompositeCommand;
+import com.jakhongir.patterns.bahavioral.command.composite.ResizeCommand;
 import com.jakhongir.patterns.bahavioral.command.framework.Button;
 import com.jakhongir.patterns.bahavioral.iterator.BrowserHistory;
 import com.jakhongir.patterns.bahavioral.iterator.Iterator;
@@ -141,11 +144,20 @@ public class Main {
         /*
          * Example of Template pattern
          */
-        System.out.println("\n Example of Template Pattern:\n");
+        System.out.println("\n Example of Command Pattern:\n");
         var service = new CustomerService();
         var command = new AddCustomerCommand(service);
         var button = new Button(command);
         button.click();
+
+        /*
+         * Example of Composite Command
+         */
+        System.out.println("\n Example of Composite Commands:\n");
+        var compositeCommands = new CompositeCommand();
+        compositeCommands.add(new ResizeCommand());
+        compositeCommands.add(new BlackAndWhiteCommand());
+        compositeCommands.execute();
     }
 
     public static TaxCalculator getCalculator() {
